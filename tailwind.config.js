@@ -387,5 +387,18 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const toggleUtilities = {
+        '.point-down': {
+          transform: 'rotate(-40deg) translateY(2px) translateX(-10px)',
+        },
+        '.point-up': {
+          transform: 'rotate(40deg) translateY(-2px) translateX(-10px)',
+        },
+      }
+
+      addUtilities(toggleUtilities)
+    }
+  ],
 }

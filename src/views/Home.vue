@@ -1,17 +1,15 @@
 <template>
   <div class="home">
-    <TopBar />
+    <h1>Home</h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TopBar from "@/components/topbar/TopBar.vue";
 
 export default {
   name: "home",
   components: {
-    TopBar
   }
 };
 </script>

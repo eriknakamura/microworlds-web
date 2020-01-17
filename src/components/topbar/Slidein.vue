@@ -16,7 +16,6 @@ export default class Slidein extends Vue {
     isOut:boolean = this.$store.state.Nav.slidein;
 
     get shoudSlideOut() {
-        console.log("should slide out");
         return this.$store.state.Nav.slidein;
     }
     slideOut() {

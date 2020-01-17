@@ -4,14 +4,14 @@
     <Slidein>
       <ul class="mt-8">
         <li>
-          <a href="#home">Home</a>
+          <router-link to="/">Home</router-link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <router-link to="/about">About</router-link>
         </li>
       </ul>
     </Slidein>
-    <h1 class="text-xl">Microworlds live</h1>
+    <h1 class="text-xl">microworlds.<span class="italic">live</span></h1>
   </div>
 </template>
 

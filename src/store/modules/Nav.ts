@@ -11,7 +11,6 @@ class Nav extends VuexModule {
   @Mutation
   toggleSlidein() {
     this.slidein = !this.slidein;
-    console.log("Toggling slide");
   }
 
 }
