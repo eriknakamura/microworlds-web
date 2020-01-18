@@ -388,17 +388,26 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-    function({ addUtilities }) {
-      const toggleUtilities = {
-        '.point-down': {
-          transform: 'rotate(-40deg) translateY(2px) translateX(-10px)',
+    function ({ addComponents }) {
+      const menuToggle = {
+        '.tog-bar': {
+          width: '100%',
+          height: '5px',
+          margin: '6px 0',
+          transition: '.5s'
         },
-        '.point-up': {
-          transform: 'rotate(40deg) translateY(-2px) translateX(-10px)',
+        '.tog-bar-1-open': {
+          transform: 'rotate(-45deg) translate(-9px, 6px)',
+        },
+        '.tog-bar-2-open': {
+          opacity: '0',
+        },
+        '.tog-bar-3-open': {
+          transform: 'rotate(45deg) translate(-8px, -8px)',
         },
       }
 
-      addUtilities(toggleUtilities)
+      addComponents(menuToggle)
     }
   ],
 }
